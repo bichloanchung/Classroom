@@ -7,15 +7,27 @@ import otherclasses.Person;
 public class PersonTest {
 
 	@Test
-	public void test() {
+	public void testFN() {
 		Person p = new Person("Rafael", "Silva", 30,'M');
 		assertEquals(p.getFirstName().equals("Rafael"),true);
+	}
+	@Test
+	public void testLN() {
+		Person p = new Person("Rafael", "Silva", 30,'M');
 		assertEquals(p.getLastName().equals("Silva"),true);
+	}
+	@Test
+	public void testAg() {
+		Person p = new Person("Rafael", "Silva", 30,'M');
 		assertTrue(p.getAge()==30);
+	}
+	@Test
+	public void testGe() {
+		Person p = new Person("Rafael", "Silva", 30,'M');
 		assertTrue(p.getGender()=='M');
 	}
 	@Test
-	public void test2() {
+	public void testNP() {
 		Person p = new Person(" ", " ",0,' ');
 		p.setFirstName("Firstname");
 		p.setLastName("Lastname");
